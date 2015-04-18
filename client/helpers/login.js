@@ -1,5 +1,5 @@
-
-		var attempts = 0;
+var attempts = 0;
+		
 Template.login.events({
 	'click button': function() {  
 		var user = $('#username').val();
@@ -11,7 +11,7 @@ Template.login.events({
 		else if(attempts < 3)
 		{
 		
-                    alert("Not a valid login, try agian");
+                    alert("Not a valid login, try again");
 		    attempts = attempts + 1;
 		    console.log("attempts: " + attempts);
                 }
